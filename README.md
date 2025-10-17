@@ -3,7 +3,6 @@
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Build](https://img.shields.io/github/actions/workflow/status/Trytonottry/meme-arena/ci.yml?label=build)
 ![Docker](https://img.shields.io/badge/docker-ready-blue.svg)
 ![Kiro](https://img.shields.io/badge/Powered%20by-Kiro-purple.svg)
 ![Hackathon](https://img.shields.io/badge/Devvit%20Hackathon-2025-orange.svg)
