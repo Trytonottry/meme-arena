@@ -1,0 +1,22 @@
+# /.kiro/preview.yml
+version: 1
+name: Meme Arena Preview
+services:
+  web:
+    build: .
+    port: 3000
+    env:
+      NODE_ENV: production
+      KIRO_ENV: preview
+    healthcheck:
+      path: /
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    preview:
+      enabled: true
+      public: true
+      url: https://{{preview_id}}.meme-arena.kiro.run
+hooks:
+  post_deploy:
+    - echo "✅ Kiro preview environment ready at $KIRO_PREVIEW_URL"

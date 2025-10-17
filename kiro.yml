@@ -1,0 +1,13 @@
+name: meme-arena
+services:
+  preview:
+    image: node:20
+    command: bash -lc "cd backend && npm ci && npm run start"
+    ports:
+      - 4000
+  frontend:
+    image: node:20
+    command: bash -lc "cd frontend && npm ci && npm run build"
+artifacts:
+  - backend
+  - frontend
